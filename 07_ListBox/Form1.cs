@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _07_ListBox
@@ -15,7 +8,16 @@ namespace _07_ListBox
         public Form1()
         {
             InitializeComponent();
-            tbItem.TabIndex = 0;
+            //  tbItem.TabIndex = 0;
+
+            var games = new[] { "FIFA", "GTA5", "Fallout", "Ref dead" };
+            var students = new[] {
+                new Student { Id = 1, Name = "Ivan", Surname = "Ivanov"},
+                new Student { Id = 2, Name = "Ivanka", Surname = "Ivanov"}
+            };
+
+
+            listBox1.Items.AddRange(students);
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -73,7 +75,10 @@ namespace _07_ListBox
             if (listBox1.SelectedIndex < 0)
                 return;
 
-            lbInfo.Text = $"Value: {listBox1.SelectedItem}, index = {listBox1.SelectedIndex}";
+            if (!(listBox1.SelectedItem is Student))
+                lbInfo.Text = $"Value: {listBox1.SelectedItem}, index = {listBox1.SelectedIndex}";
+            else
+                lbInfo.Text = $"Value: {(listBox1.SelectedItem as Student).Name}";
         }
     }
 }

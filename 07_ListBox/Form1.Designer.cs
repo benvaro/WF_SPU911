@@ -62,6 +62,7 @@
             this.tbItem.Name = "tbItem";
             this.tbItem.Size = new System.Drawing.Size(326, 22);
             this.tbItem.TabIndex = 1;
+            this.tbItem.Text = "Example";
             this.tbItem.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbItem_KeyUp);
             // 
             // btnAdd
@@ -152,6 +153,7 @@
             // 
             // Form1
             // 
+            this.AcceptButton = this.btnAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 285);
