@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Keyboard", "04_Keyboard\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_TextBox", "05_TextBox\05_TextBox.csproj", "{4FFF5228-C55F-4A36-8C67-AC2A2052E15E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_CheckBox", "06_CheckBox\06_CheckBox.csproj", "{57888345-6AB1-4B82-B53A-508BFFD3BFB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{4FFF5228-C55F-4A36-8C67-AC2A2052E15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FFF5228-C55F-4A36-8C67-AC2A2052E15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FFF5228-C55F-4A36-8C67-AC2A2052E15E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57888345-6AB1-4B82-B53A-508BFFD3BFB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57888345-6AB1-4B82-B53A-508BFFD3BFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57888345-6AB1-4B82-B53A-508BFFD3BFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57888345-6AB1-4B82-B53A-508BFFD3BFB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
