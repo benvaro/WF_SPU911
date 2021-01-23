@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace _06_CheckBox
@@ -35,7 +29,6 @@ namespace _06_CheckBox
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             text = "";
-            var checkBox = sender as CheckBox;
             foreach (Control item in splitContainer2.Panel1.Controls)
             {
                 if (item is CheckBox && (item as CheckBox).Checked)
@@ -45,6 +38,16 @@ namespace _06_CheckBox
             }
 
             lbLanguages.Text = text;
+        }
+
+        private void rbColor_CheckedChanged(object sender, EventArgs e)
+        {
+            var rb = sender as RadioButton;
+            if (rb.Checked)
+            {
+                (rb.Parent as Panel).BackColor = Color.FromName(rb.Text);
+            }
+
         }
     }
 }

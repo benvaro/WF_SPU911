@@ -31,18 +31,27 @@
             this.cbInfo = new System.Windows.Forms.CheckBox();
             this.btnGo = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.lbLanguages = new System.Windows.Forms.Label();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbMale = new System.Windows.Forms.RadioButton();
+            this.rbFemale = new System.Windows.Forms.RadioButton();
+            this.panelColor = new System.Windows.Forms.Panel();
+            this.rbRed = new System.Windows.Forms.RadioButton();
+            this.rbGreen = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.panelColor.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbInfo
@@ -91,17 +100,6 @@
             this.splitContainer1.SplitterWidth = 6;
             this.splitContainer1.TabIndex = 2;
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(23, 23);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(47, 21);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "C#";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -120,20 +118,20 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.splitContainer2.Panel2.Controls.Add(this.groupBox1);
+            this.splitContainer2.Panel2.Controls.Add(this.panelColor);
             this.splitContainer2.Size = new System.Drawing.Size(725, 259);
             this.splitContainer2.SplitterDistance = 241;
             this.splitContainer2.TabIndex = 2;
             // 
-            // checkBox2
+            // lbLanguages
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(23, 65);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(55, 21);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "C++";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.lbLanguages.AutoSize = true;
+            this.lbLanguages.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbLanguages.Location = new System.Drawing.Point(11, 156);
+            this.lbLanguages.Name = "lbLanguages";
+            this.lbLanguages.Size = new System.Drawing.Size(2, 19);
+            this.lbLanguages.TabIndex = 3;
             // 
             // checkBox3
             // 
@@ -146,14 +144,95 @@
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // lbLanguages
+            // checkBox2
             // 
-            this.lbLanguages.AutoSize = true;
-            this.lbLanguages.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbLanguages.Location = new System.Drawing.Point(11, 156);
-            this.lbLanguages.Name = "lbLanguages";
-            this.lbLanguages.Size = new System.Drawing.Size(2, 19);
-            this.lbLanguages.TabIndex = 3;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(23, 65);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(55, 21);
+            this.checkBox2.TabIndex = 1;
+            this.checkBox2.Text = "C++";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(23, 23);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(47, 21);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "C#";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.groupBox1.Controls.Add(this.rbMale);
+            this.groupBox1.Controls.Add(this.rbFemale);
+            this.groupBox1.Location = new System.Drawing.Point(21, 138);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 110);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Gender";
+            // 
+            // rbMale
+            // 
+            this.rbMale.AutoSize = true;
+            this.rbMale.Location = new System.Drawing.Point(20, 34);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(59, 21);
+            this.rbMale.TabIndex = 2;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "Male";
+            this.rbMale.UseVisualStyleBackColor = true;
+            // 
+            // rbFemale
+            // 
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.Location = new System.Drawing.Point(20, 62);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(75, 21);
+            this.rbFemale.TabIndex = 2;
+            this.rbFemale.TabStop = true;
+            this.rbFemale.Text = "Female";
+            this.rbFemale.UseVisualStyleBackColor = true;
+            // 
+            // panelColor
+            // 
+            this.panelColor.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panelColor.Controls.Add(this.rbRed);
+            this.panelColor.Controls.Add(this.rbGreen);
+            this.panelColor.Location = new System.Drawing.Point(21, 22);
+            this.panelColor.Name = "panelColor";
+            this.panelColor.Size = new System.Drawing.Size(200, 100);
+            this.panelColor.TabIndex = 3;
+            // 
+            // rbRed
+            // 
+            this.rbRed.AutoSize = true;
+            this.rbRed.Location = new System.Drawing.Point(24, 25);
+            this.rbRed.Name = "rbRed";
+            this.rbRed.Size = new System.Drawing.Size(55, 21);
+            this.rbRed.TabIndex = 0;
+            this.rbRed.TabStop = true;
+            this.rbRed.Text = "Red";
+            this.rbRed.UseVisualStyleBackColor = true;
+            this.rbRed.CheckedChanged += new System.EventHandler(this.rbColor_CheckedChanged);
+            // 
+            // rbGreen
+            // 
+            this.rbGreen.AutoSize = true;
+            this.rbGreen.Location = new System.Drawing.Point(24, 53);
+            this.rbGreen.Name = "rbGreen";
+            this.rbGreen.Size = new System.Drawing.Size(69, 21);
+            this.rbGreen.TabIndex = 1;
+            this.rbGreen.TabStop = true;
+            this.rbGreen.Text = "Green";
+            this.rbGreen.UseVisualStyleBackColor = true;
+            this.rbGreen.CheckedChanged += new System.EventHandler(this.rbColor_CheckedChanged);
             // 
             // Form1
             // 
@@ -169,8 +248,13 @@
             this.splitContainer1.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel1.PerformLayout();
+            this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.panelColor.ResumeLayout(false);
+            this.panelColor.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -185,6 +269,12 @@
         private System.Windows.Forms.Label lbLanguages;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.RadioButton rbFemale;
+        private System.Windows.Forms.RadioButton rbMale;
+        private System.Windows.Forms.RadioButton rbGreen;
+        private System.Windows.Forms.RadioButton rbRed;
+        private System.Windows.Forms.Panel panelColor;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
