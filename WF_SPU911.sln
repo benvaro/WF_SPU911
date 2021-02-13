@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_ComboBox", "09_ComboBox\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_Dialogs", "10_Dialogs\10_Dialogs.csproj", "{19B3E539-90FF-46C0-8860-16C9180EEFE8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_MDI", "11_MDI\11_MDI.csproj", "{67AD8FFA-E8BF-4A0B-825D-5720706C6375}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_Multiform", "12_Multiform\12_Multiform.csproj", "{B19C2C9B-4657-49D0-972B-CFFFC6C5BF59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{19B3E539-90FF-46C0-8860-16C9180EEFE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19B3E539-90FF-46C0-8860-16C9180EEFE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19B3E539-90FF-46C0-8860-16C9180EEFE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67AD8FFA-E8BF-4A0B-825D-5720706C6375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67AD8FFA-E8BF-4A0B-825D-5720706C6375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67AD8FFA-E8BF-4A0B-825D-5720706C6375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67AD8FFA-E8BF-4A0B-825D-5720706C6375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B19C2C9B-4657-49D0-972B-CFFFC6C5BF59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B19C2C9B-4657-49D0-972B-CFFFC6C5BF59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B19C2C9B-4657-49D0-972B-CFFFC6C5BF59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B19C2C9B-4657-49D0-972B-CFFFC6C5BF59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
